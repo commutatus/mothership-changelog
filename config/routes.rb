@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :project_users
   resources :post_releases
   resources :posts
   resources :project_environments

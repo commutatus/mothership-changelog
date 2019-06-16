@@ -1,3 +1,3 @@
 class Project < ApplicationRecord
-	scope :public, -> {where(is_public: true)}
+	scope :public_only, -> {where(is_public: true)}
 end

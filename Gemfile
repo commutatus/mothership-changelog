@@ -24,6 +24,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'slim'
 
+gem 'spotlight_search'
+
 gem 'devise'
 
 # Use Active Storage variant
