@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Post Releases</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Post</th>
+      <th>Project environment</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @post_releases.each do |post_release| %>
+      <tr>
+        <td><%= post_release.post_id %></td>
+        <td><%= post_release.project_environment_id %></td>
+        <td><%= link_to 'Show', post_release %></td>
+        <td><%= link_to 'Edit', edit_post_release_path(post_release) %></td>
+        <td><%= link_to 'Destroy', post_release, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Post Release', new_post_release_path %>

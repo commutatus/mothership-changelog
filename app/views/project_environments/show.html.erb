@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Project:</strong>
+  <%= @project_environment.project_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @project_environment.name %>
+</p>
+
+<p>
+  <strong>Is public:</strong>
+  <%= @project_environment.is_public %>
+</p>
+
+<%= link_to 'Edit', edit_project_environment_path(@project_environment) %> |
+<%= link_to 'Back', project_environments_path %>
