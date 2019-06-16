@@ -22,6 +22,10 @@ gem 'jbuilder', '~> 2.5'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'slim'
+
+gem 'spotlight_search'
+
 gem 'devise'
 
 # Use Active Storage variant
